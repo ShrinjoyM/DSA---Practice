@@ -5,10 +5,12 @@ int main(){
     cout<<"Enter the range: ";
     cin>>n;
     int i=1,j;
+    char ch='A';
     while(i<=n){
-        j=i;
-        while(j<i*2){
-            cout<<j<<" ";
+        j=1;
+        while(j<=n){
+            cout<<ch<<" ";
+            ch++;
             j++;
         }
         cout<<endl;
