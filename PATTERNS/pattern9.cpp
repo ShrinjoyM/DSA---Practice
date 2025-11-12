@@ -4,15 +4,16 @@ int main(){
     int n;
     cout<<"Enter the range: ";
     cin>>n;
-    int i=1;
+    int i=1,j,k=1;
     while(i<=n){
-        int j=1;
-        while(j<=n){
-            cout<<j<<" ";
+        j=1;
+        while(j<=i){
+            cout<<k<<" ";
+            k++;
             j++;
         }
         cout<<endl;
-         i++;
+        i++;
     }
     return 0;
 }
