@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;
+    cout<<"Enter the range: ";
+    cin>>n;
+    int i=1,j,star,k,n1;
+    while(i<=n){
+        n1=n+1-i;
+        j=1;
+        while(j<=n+1-i){
+            cout<<j;
+            j++;
+        }
+        star=i-1;
+        while(star>0){
+            cout<<"**";
+            star--;
+        }
+        k=1;
+        while(k<=n+1-i){
+            cout<<n1;
+            n1--;
+            k++;
+        }
+        cout<<endl;
+        i++;
+    }
+    return 0;
+}
