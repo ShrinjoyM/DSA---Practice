@@ -6,14 +6,14 @@ int main(){
     cin>>n;
     int i=1,j,space;
     while(i<=n){
-        space=i-1;
+        space=n-i;
         while(space>0){
             cout<<" ";
             space--;
         }
         j=1;
-        while(j<=n+1-i){
-            cout<<"*";
+        while(j<=i){
+            cout<<i;
             j++;
         }
         cout<<endl;
