@@ -9,7 +9,7 @@ int main(){
     while(i<=n){
         j=1;
         while(j<=n){
-            ch='A'+i+j-2;
+            ch='A'+i-1;
             cout<<ch<<" ";
             j++;
         }
