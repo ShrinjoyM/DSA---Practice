@@ -4,7 +4,7 @@ int main(){
     int n;
     cout<<"Enter the range: ";
     cin>>n;
-    int i=1,j,star,k,n1;
+    int i=1,j,star,side,n1;
     while(i<=n){
         n1=n+1-i;
         j=1;
@@ -17,11 +17,11 @@ int main(){
             cout<<"**";
             star--;
         }
-        k=1;
-        while(k<=n+1-i){
+        side=1;
+        while(side<=n+1-i){
             cout<<n1;
             n1--;
-            k++;
+            side++;
         }
         cout<<endl;
         i++;
