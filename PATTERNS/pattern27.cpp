@@ -15,7 +15,7 @@ int main(){
         while(j<=i){
             cout<<k;
             k++;
-            j--;
+            j++;
         }
         cout<<endl;
         i++;
