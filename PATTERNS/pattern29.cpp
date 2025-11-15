@@ -15,7 +15,7 @@ int main(){
         star=i-1;
         while(star>0){
             cout<<"**";
-            star--;
+            star++;
         }
         side=1;
         while(side<=n+1-i){
