@@ -21,7 +21,7 @@ int main(){
         while(side<=n+1-i){
             cout<<n1;
             n1--;
-            side++;
+            side--;
         }
         cout<<endl;
         i++;
