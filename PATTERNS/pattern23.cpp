@@ -14,7 +14,7 @@ int main(){
         j=1;
         while(j<=n+1-i){
             cout<<"*";
-            j--;
+            j++;
         }
         cout<<endl;
         i++;
