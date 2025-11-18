@@ -1,16 +1,29 @@
 #include<bits/stdc++.h>
 using namespace std;
+int decimaltobinary(int n){
+    int bit,ans=0,i=1;
+    while (n!=0) {
+    bit = n % 2;
+    n /= 2;
+    ans+= bit * i;
+    i *= 10;
+  }
+    return ans;
+}
 int main(){
     int n;
     cout<<"Enter the decimal number: ";
     cin>>n;
-    int bit,ans=0,i=0;
-    while(n!=0){
-        bit=n & 1;
-        //cout<<bit;
-        ans=(bit*pow(10,i))+ans;
-        n=n>>1;
-        i++;
+    if(n>0){
+        cout<<decimaltobinary(n);
     }
-    cout<<ans;
+    else{
+        n=;
+        int ans=decimaltobinary(n);
+        int newAns=ans+1;
+        // 2's comp
+        //newAns = newAns+1;
+        cout << newAns << endl;
+    }
+    return 0;   
 }
