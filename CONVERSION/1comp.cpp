@@ -13,7 +13,7 @@ int main() {
         i *= 10;
     }
     cout<<ans<<endl;
-    int d,newAns=0,k=1;
+    int d,newAns=0,k=0;
     while(ans!=0){
         d=ans%10;
         if(d==0){
@@ -22,10 +22,20 @@ int main() {
         else{
             d=0;
         }
-        newAns+=d*k;
-        k*=10;
+        newAns=(d*pow(10,k))+newAns;
+        k++;
         ans/=10;
     }
     cout<<newAns;
     return 0;
 }
+
+/*
+    1010
+
+1
+10
+100
+1001
+*/
+
