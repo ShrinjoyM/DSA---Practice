@@ -7,7 +7,7 @@ int binarytodecimal(int n){
         if(d==1){
             dec+=pow(2,i);
         }
-        i--;
+        i++;
         n/=10;
     }
     return dec;
