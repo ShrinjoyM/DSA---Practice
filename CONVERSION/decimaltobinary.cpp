@@ -6,7 +6,7 @@ int decimaltobinary(int n){
         bit=n%2;
         ans+=bit*(pow(10,i));
         n/=2;
-        i--;
+        i++;
     }
     return ans;
 }
