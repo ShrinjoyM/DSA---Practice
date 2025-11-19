@@ -12,9 +12,9 @@ int decimaltobinary(int n){
 }
 int main(){
     int n;
-    cout<<"Enter the decimal n.: ";
+    cout<<"Enter the decimal number: ";
     cin>>n;
     int ans=decimaltobinary(n);
-    cout<<ans;
+    cout<<"Binary equivalent: "<<ans;
     return 0;
 }
