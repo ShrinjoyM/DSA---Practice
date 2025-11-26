@@ -5,7 +5,7 @@ int calculator(int a,int b,int ch){
     switch(ch){
         case 1:
             calc=a%b;
-            cout<<"Result- "<<calc<<endl;
+            cout<<"Result- "<<calc;
             break;
         case 2:
             calc=a/b;
