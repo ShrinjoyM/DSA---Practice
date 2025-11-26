@@ -1,35 +1,27 @@
 #include<bits/stdc++.h>
 using namespace std;
-int notes(int amt,int ch){
+int notes(int amt){
     int calc;
-    switch(ch){
+    switch(1){
         case 1:
-            cout<<"No.of 100 notes = "<<amt/100<<endl;
-            break;
+            cout<<"No.of Rs.100 notes = "<<amt/100<<endl;
+            amt-=(amt/100)*100;
         case 2:
-            cout<<"No.of 50 notes = "<<amt/50<<endl;
-            break;
+            cout<<"No.of Rs.50 notes = "<<amt/50<<endl;
+            amt-=(amt/50)*50;
         case 3:
-            cout<<"No.of 20 notes = "<<amt/20<<endl;
-            break;
+            cout<<"No.of Rs.20 notes = "<<amt/20<<endl;
+            amt-=(amt/20)*20;
         case 4:
-            cout<<"No.of 10 notes = "<<amt/10<<endl;
+            cout<<"No.of Rs.10 notes = "<<amt/10<<endl;
+            amt-=(amt/10)*10;
             break;
-        default:
-            cout<<"Wrong choice."<<endl;
     }
 }
 int main(){
     int amt;
-    cout<<"Enter the amount: ";
+    cout<<"Enter the amount: Rs.";
     cin>>amt;
-    cout<<"Press 1 to know how many 100 notes."<<endl;
-    cout<<"Press 2 to know how many 50 notes."<<endl;
-    cout<<"Press 3 to know how many 20 notes."<<endl;
-    cout<<"Press 4 to know how many 10 notes."<<endl;
-    int ch;
-    cout<<"Enter your choice: ";
-    cin>>ch;
-    notes(amt,ch);
+    notes(amt);
     return 0;
 }
