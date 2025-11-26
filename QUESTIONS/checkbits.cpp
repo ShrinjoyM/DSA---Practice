@@ -12,6 +12,7 @@ int decimaltobinary(int n){
 }
 int checkbits(int n){
     int c=0,a=decimaltobinary(n),d;
+    cout<<"Binary representation of "<<n<<" is: "<<a<<endl;
     while(a!=0){
         d=a%10;
         if(d==1){
