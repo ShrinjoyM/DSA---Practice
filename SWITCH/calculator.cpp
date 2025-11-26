@@ -13,7 +13,7 @@ int calculator(int a,int b,int ch){
             break;
         case 3:
             calc=a*b;
-            cout<<"Result- "<<calc<<endl;
+            cout<<"Result- "<<calc;
             break;
         case 4:
             calc=a+b;
