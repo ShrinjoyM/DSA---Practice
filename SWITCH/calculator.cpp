@@ -17,7 +17,7 @@ int calculator(int a,int b,int ch){
             break;
         case 4:
             calc=a+b;
-            cout<<"Result- "<<calc;
+            cout<<"Result- "<<calc<<endl;
             break;
         case 5:
             calc=a-b;
