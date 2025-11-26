@@ -38,7 +38,7 @@ int main(){
     cout<<"Press 1 for MODULUS.\nPress 2 for DIVISION.\nPress 3 for MULTIPLICATION.\nPress 4 for ADDITION.\nPress 5 for SUBSTRACTION.\nPress 6 to EXIT."<<endl;
     int ch;
     int i;
-    for(i=1;i<=1000;i++){
+    for(i=1;i<=i*10;i++){
         if(i==1){
             cout<<"Enter your choice: ";
         }
