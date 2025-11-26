@@ -14,6 +14,6 @@ int main(){
     cout<<"Enter the range: ";
     cin>>n;
     int last_term=fib(n);
-    cout<<n<<"th term of the fibonacci series is: ";
+    cout<<n<<"th term of the fibonacci series is: "<<last_term;
     return 0;
 }
