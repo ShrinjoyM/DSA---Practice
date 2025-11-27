@@ -9,13 +9,8 @@ printArray(int arr[],int size){
 }
 int alternateswap(int ar[],int num){
     int i;
-    if(num%2==0){
-        for(i=0;i<num;i+=2){
-            swap(ar[i],ar[i+1]);
-        }
-    }
-    else{
-        for(i=0;i<num-1;i+=2){
+    for(i=0;i<num;i+=2){
+        if(i+1<num){
             swap(ar[i],ar[i+1]);
         }
     }
