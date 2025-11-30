@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-int occur(int ar[],int n){
+bool occur(int ar[],int n){
     int i,j,c=1,arr[100],k=0,arr1[100],x=0,b,count=0;
     for(i=0;i<n;i++){
         if(i==0){
@@ -29,16 +29,22 @@ int occur(int ar[],int n){
             }
             count=0;
         }
-        //cout<<c;
-        arr[k]=c;
-        //cout<<arr[k];
-        k++;
-        c=1;
+        if(c>1){
+            arr[k]=c;
+            k++;
+            c=1;
+        }
     }
-    //int len=sizeof(arr);
-    for(int a=0;a<k;a++){
-        cout<<arr[a]<<" ";
+    bool unq=1;
+    for(int i=0;i<k;i++){
+        for(int j=i+1;j<k;j++){
+            if(arr[i]==arr[j]){
+                unq=0;
+                break;
+            }
+        }
     }
+    return unq;
 }
 int main(){
     int ar[100];
@@ -50,6 +56,12 @@ int main(){
     for(i=0;i<size;i++){
         cin>>ar[i];
     }
-    occur(ar,size);
+    bool unq=occur(ar,size);
+    if(unq==1){
+        cout<<"True.";
+    }
+    else{
+        cout<<"False.";
+    }
     return 0;
 }
