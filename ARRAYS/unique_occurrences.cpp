@@ -31,7 +31,6 @@ bool occur(int arr[],int n){
         }
         if(c>0){
             arr2[k]=c;
-            cout<<arr2[k]<<" ";
             k++;
             c=0;
         }
