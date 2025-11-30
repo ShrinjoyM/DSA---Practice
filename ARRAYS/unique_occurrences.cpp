@@ -8,7 +8,7 @@ int occur(int ar[],int n){
             x++;
             for(j=i+1;j<n;j++){
                 if(ar[i]==ar[j]){
-                    c+=1;
+                    c++;
                 }
             }
         }
