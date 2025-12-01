@@ -13,10 +13,11 @@ void sort(int arr[],int n){
             c3++;
         }
     }
-    cout<<c1<<endl<<c2<<endl<<c3<<endl;
+    //cout<<c1<<endl<<c2<<endl<<c3<<endl;
     c2+=c1;
     c3+=c2;
-    cout<<c1<<endl<<c2<<endl<<c3<<endl;
+    //cout<<c1<<endl<<c2<<endl<<c3<<endl;
+    cout<<"Sorted Array: "<<endl;
     for(int i=0;i<n;i++){
         if(i<c1){
             arr[i]=0;
@@ -31,7 +32,14 @@ void sort(int arr[],int n){
     }
 }
 int main(){
-    int arr[]={0,1,2,2,1,0};
-    int n=sizeof(arr);
+    int arr[100];
+    int n;
+    cout<<"Enter the size of the array: ";
+    cin>>n;
+    cout<<"Enter the array elements :"<<endl;
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    //int n=sizeof(arr);
     sort(arr,n);
 }
