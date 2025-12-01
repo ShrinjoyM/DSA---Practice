@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int intersection(int ar[],int n){
-    int i,j,c=0,arr[100],k=0,a,b,count=0;
+    int i,j,c=0,arr[100],k=0,a,b,count=0,arr1[100],x=0;
     for(i=0;i<n;i++){
         for(j=0;j<n;j++){
             if(ar[i]==ar[j]){
@@ -17,11 +17,15 @@ int intersection(int ar[],int n){
                 }
             }
             if(count==1){
-                cout<<ar[i]<<" is a duplicate element."<<endl;
+                arr1[x]=ar[i];
+                x++;
             }
             count=0;
         }
         c=0;
+    }
+    for(int i=0;i<x;i++){
+        cout<<arr1[i]<<" ";
     }
 }
 int main(){
