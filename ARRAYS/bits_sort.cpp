@@ -13,10 +13,8 @@ void sort(int arr[],int n){
             c3++;
         }
     }
-    //cout<<c1<<endl<<c2<<endl<<c3<<endl;
     c2+=c1;
     c3+=c2;
-    //cout<<c1<<endl<<c2<<endl<<c3<<endl;
     cout<<"Sorted Array: "<<endl;
     for(int i=0;i<n;i++){
         if(i<c1){
