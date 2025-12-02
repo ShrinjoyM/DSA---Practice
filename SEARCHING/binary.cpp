@@ -12,7 +12,7 @@ int search(int ar[],int n,int key){
         int mid=st+(end-st)/2;
         if(ar[mid]==key){
             return mid+1;
-            break;
+            //break;
         }
         else if(ar[mid]>key){
             end=mid-1;
