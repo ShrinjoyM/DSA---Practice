@@ -30,14 +30,12 @@ int totalOcc(vector<int>&ar,int n,int key){
             end=mid-1;
         }
     }
-    cout<<l<<endl;
     if(f==-1 && l==-1){
         occ=-1;
     }
     else{
         occ=(l-f)+1;
     }
-    cout<<occ<<endl;
     return occ;
 }
 int main(){
