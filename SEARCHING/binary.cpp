@@ -8,9 +8,8 @@ int search(int ar[],int n,int key){
     }
     cout<<endl;
     int st=0,end=n-1;
-    int mid=(st+end)/2;
     while(st<=end){
-        
+        int mid=st+(end-st)/2;
         if(ar[mid]==key){
             return mid+1;
             break;
@@ -21,7 +20,6 @@ int search(int ar[],int n,int key){
         else{
             st=mid+1;
         }
-        mid=(st+end)/2;
     }
     return -1;
 }
