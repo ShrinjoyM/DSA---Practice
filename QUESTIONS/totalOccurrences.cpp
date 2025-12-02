@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
-int totalOcc(vector<int>&ar,int n,int key){
-    int st=0,end=n-1,f=-1,occ;
+int firstPos(vector<int> &ar,int n,int key){
+    int st=0,end=n-1,f=-1;
     while(st<=end){
         int mid=st+(end-st)/2;
         if(ar[mid]==key){
@@ -15,11 +15,13 @@ int totalOcc(vector<int>&ar,int n,int key){
             end=mid-1;
         }
     }
-    st=0,end=n-1;
-    int l=-1;
+    return f;
+}
+int lastPos(vector<int> &ar,int n,int key){
+    int st=0,end=n-1,l=-1;
     while(st<=end){
         int mid=st+(end-st)/2;
-        if(ar[mid]==key){
+        if (ar[mid]==key){
             l=mid;
             st=mid+1;
         }
@@ -30,6 +32,12 @@ int totalOcc(vector<int>&ar,int n,int key){
             end=mid-1;
         }
     }
+    return l;
+}
+int totalOcc(vector<int> &ar,int n,int key){
+    int f=firstPos(ar,n,key);
+    int l=lastPos(ar,n,key);
+    int occ;
     if(f==-1 && l==-1){
         occ=-1;
     }
@@ -51,14 +59,14 @@ int main(){
     }
     sort(ar.begin(),ar.end());
     int key;
-    cout<<"Enter the element whose occurrence to be checked: ";
+    cout<<"Enter the element: ";
     cin>>key;
     int occ=totalOcc(ar,size,key);
     if(occ==-1){
         cout<<"Element not present.";
     }
     else{
-        cout<<"Occurrence of "<<key<<" = "<<occ;
+        cout<<"Occurrences of element = "<<occ;
     }
     return 0;
 }
