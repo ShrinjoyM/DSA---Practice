@@ -37,7 +37,7 @@ int main(){
     cin>>key;
     int res=search(ar,size,key);
     if (res==-1){
-        cout<<"Element not found.\n";
+        cout<<"Element not found."<<endl;
     }
     else{
         cout<<"Element found at position "<<res<<" of the sorted array."<<endl;

@@ -31,9 +31,9 @@ int main(){
     int key;
     cout<<"Enter key to search: ";
     cin>>key;
-    int originalIndex = binarySearch(ar,n, key);
+    int originalIndex = binarySearch(ar,n,key);
     if (originalIndex==-1){
-        cout<<"Element not found.\n";
+        cout<<"Element not found."<<endl;
     }
     else{
         cout<<"Element found at position: "<<originalIndex+1<<endl;
