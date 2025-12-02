@@ -1,10 +1,16 @@
 #include<bits/stdc++.h>
 using namespace std;
 int search(int ar[],int n,int key){
-    //sort(ar,ar+n);
+    sort(ar,ar+n);
+    cout<<"Sorted Array: "<<endl;
+    for(int i=0;i<n;i++){
+        cout<<ar[i]<<" ";
+    }
+    cout<<endl;
     int st=0,end=n-1;
-    int mid=(st+end)/2,ans=-1;
+    int mid=(st+end)/2;
     while(st<=end){
+        
         if(ar[mid]==key){
             return mid+1;
             break;
@@ -24,15 +30,19 @@ int main(){
     cout<<"Enter the size of the array: ";
     cin>>size;
     int ar[100];
-    cout<<"Enter the array elements in ascending order: "<<endl;
+    cout<<"Enter the array elements: "<<endl;
     for(int i=0;i<size;i++){
         cin>>ar[i];
     }
     int key;
     cout<<"Enter the element to be searched: ";
     cin>>key;
-    //cout<<endl;
     int res=search(ar,size,key);
-    cout<<res;
+    if (res==-1){
+        cout<<"Element not found.\n";
+    }
+    else{
+        cout<<"Element found at position "<<res<<" of the sorted array."<<endl;
+    }
     return 0;
 }
