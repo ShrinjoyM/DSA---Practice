@@ -6,8 +6,8 @@ int sqrt(int n){
     }
     int st=1,end=n/2,ans=-1;
     while(st<=end){
-        long long mid=st+(end-st)/2;
-        long long sq=mid*mid;
+        long long int mid=st+(end-st)/2;
+        long long int sq=mid*mid;
         if(sq==n){
             return mid;
             break;
