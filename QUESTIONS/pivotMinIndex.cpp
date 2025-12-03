@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+using namespace std;
+int peak(int ar[],int n){
+    int st=0,end=n-1;
+    while(st<end){
+        int mid=st+(end-st)/2;
+        if(ar[mid]>=ar[0]){
+            st=mid+1;
+        }
+        else{
+            end=mid;
+        }
+    }
+    return st;
+}
+int main(){
+    int n;
+    cout<<"Enter the size of the array: ";
+    cin>>n;
+    int ar[100];
+    cout<<"Enter the array elements: "<<endl;
+    for(int i=0;i<n;i++){
+        cin>>ar[i];
+    }
+    int ans=peak(ar,n);
+    cout<<"Index of element = "<<ans+1;
+    return 0;
+}
