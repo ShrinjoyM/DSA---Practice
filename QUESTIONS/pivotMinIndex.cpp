@@ -17,11 +17,14 @@ int main(){
     int n;
     cout<<"Enter the size of the array: ";
     cin>>n;
-    int ar[100];
+    vector<pair<int,int> ar;
     cout<<"Enter the array elements: "<<endl;
     for(int i=0;i<n;i++){
-        cin>>ar[i];
+        int x;
+        cin>>x;
+        ar.push_back({x,i});
     }
+    sort(ar.begin(),ar.end());
     int ans=peak(ar,n);
     cout<<"Index of element = "<<ans+1;
     return 0;
