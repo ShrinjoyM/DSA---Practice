@@ -22,10 +22,21 @@ int sqrt(int n){
     }
     return ans;
 }
+double morePrecision(int n,int precision,int sol){
+    double factor=1,ans=sol;
+    for(int i=0;i<precision;i++){
+        factor/=10;
+        for(double j=ans;j*j<n;j+=factor){
+            ans=j;
+        }
+    }
+    return ans;
+}
 int main(){
     int n;
     cout<<"Enter the value: ";
     cin>>n;
-    cout<<"Square root of "<<n<<" = "<<sqrt(n);
+    int sol=sqrt(n);
+    cout<<"Square root of "<<n<<" = "<<morePrecision(n,3,sol);
     return 0;
 }
