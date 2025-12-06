@@ -31,7 +31,7 @@ long long bookAllocation(int ar[],int n,int std){
             long long mid=st+(end-st)/2;
             if(isPossible(ar,n,std,mid)){
                 ans=mid;
-                end=mid-1;
+                end=mid;
             }
             else{
                 st=mid+1;
