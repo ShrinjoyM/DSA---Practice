@@ -19,7 +19,7 @@ bool isPossible(int ar[],int n,int std,long long mid){
 }
 long long bookAllocation(int ar[],int n,int std){
     if(std>n){
-        return 0;
+        return -1;
     }
     else{
         long long sumPages=0;
