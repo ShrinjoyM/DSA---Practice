@@ -8,7 +8,7 @@ int peak(int ar[],int n){
             st=mid+1;
         }
         else{
-            end=mid;
+            end=mid-1;
         }
     }
     return st;
