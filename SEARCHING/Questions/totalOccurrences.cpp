@@ -12,7 +12,7 @@ int firstPos(vector<int> &ar,int n,int key){
             st=mid+1;
         }
         else{
-            end=mid;
+            end=mid-1;
         }
     }
     return f;
