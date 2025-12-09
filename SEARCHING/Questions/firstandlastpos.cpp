@@ -38,7 +38,7 @@ int main(){
     int size;
     cout<<"Enter the size of the array: ";
     cin>>size;
-    vector<pair<int,int>> ;
+    vector<pair<int,int>> ar;
     cout<<"Enter the array elements: "<<endl;
     for(int i=0;i<size;i++){
         int x;
